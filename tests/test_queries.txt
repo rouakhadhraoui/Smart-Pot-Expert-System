@@ -1,0 +1,56 @@
+
+
+=== CHARGEMENT DE LA BASE DE CONNAISSANCES ===
+?- [kb/knowledge_loader].
+
+=== TESTS DE BASE ===
+
+% Lister toutes les plantes
+?- plante(X, _).
+
+% Vérifier les classes disponibles
+?- classe(X).
+
+% Vérifier les fréquences d'arrosage
+?- arrosage(X).
+
+% Vérifier les précautions
+?- precaution(X).
+
+=== TESTS D'ANALYSE DE PLANTES ===
+
+% Analyser l'Aloe Vera
+?- afficher_analyse(aloe_vera).
+
+% Analyser la Monstera
+?- afficher_analyse(monstera).
+
+=== TESTS D'IDENTIFICATION ===
+
+% Test manuel : Identifier un cactus
+?- assertz(forme_feuille(arrondie)), 
+   assertz(taille_plante(petite)), 
+   assertz(type_sol(drainant)), 
+   classe(X), 
+   arrosage(Y).
+
+% Nettoyer après le test
+?- retractall(forme_feuille(_)), 
+   retractall(taille_plante(_)), 
+   retractall(type_sol(_)).
+
+=== TESTS DE DIAGNOSTIC ===
+
+% Diagnostic : Feuilles molles
+?- diagnostiquer_probleme([etat_feuille(molle)], D).
+
+% Diagnostic : Feuilles sèches
+?- diagnostiquer_probleme([etat_feuille(seche)], D).
+
+% Diagnostic : Rempotage nécessaire
+?- diagnostiquer_probleme([racines_apparentes(oui)], D).
+
+=== LANCEMENT DES TESTS AUTOMATIQUES ===
+
+?- [tests/example_inputs].
+?- lancer_tous_tests.
