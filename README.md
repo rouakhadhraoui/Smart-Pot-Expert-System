@@ -1,4 +1,4 @@
-# 🌿 Smart-Pot - Plant Management Expert System
+#  Smart-Pot - Plant Management Expert System
 
 An expert system developed in Prolog for identification, analysis, and diagnosis of indoor plants.
 
@@ -15,25 +15,6 @@ Smart-Pot is an expert system based on inference rules that allows you to:
 - Recommend optimal watering frequencies
 - Diagnose plant health issues
 - Provide tailored precautionary advice
-
----
-
-##  Architecture
-```
-SMART-POT/
-├── kb/                         # Knowledge base
-│   ├── facts.pl               # Facts (characteristics)
-│   ├── rules.pl               # Inference rules (15 rules)
-│   ├── plantes.pl             # Plant database
-│   └── knowledge_loader.pl    # Loader
-├── src/                       # Source code
-│   ├── inference_engine.pl    # Inference engine
-│   ├── smartpot_cli.pl        # CLI interface
-│   └── utils.pl               # Utilities
-└── tests/                     # Automated tests
-    ├── example_inputs.pl
-    └── test_queries.txt
-```
 
 ---
 
@@ -93,8 +74,9 @@ swipl
 
 
 
-## 📄 License
+## License
 
 MIT License - Free to use and modify
 
 ---
+
