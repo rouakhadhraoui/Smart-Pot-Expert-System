@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Smart-Pot - Plant Management Expert System
+=======
+#  Smart-Pot - Plant Management Expert System
+>>>>>>> c1d9585edc365e1c020ba4ab5f4a563d6fca2b10
 
 An expert system developed in Prolog for identification, analysis, and diagnosis of indoor plants.
 
@@ -18,9 +22,12 @@ Smart-Pot is an expert system based on inference rules that allows you to:
 
 ---
 
+<<<<<<< HEAD
 
 ---
 
+=======
+>>>>>>> c1d9585edc365e1c020ba4ab5f4a563d6fca2b10
 ##  Installation & Launch
 
 ### Prerequisites
@@ -83,4 +90,7 @@ MIT License - Free to use and modify
 
 ---
 
+<<<<<<< HEAD
 git clone https://github.com/rouakhadhraoui/Smart-Pot-Expert-System
+=======
+>>>>>>> c1d9585edc365e1c020ba4ab5f4a563d6fca2b10
